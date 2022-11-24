@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserLogin.master.cs" Inherits="ComplaintRegistration.User.UserLogin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>User Page</title>
+    <link rel="stylesheet" href="StyleSheet3.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body  bgcolor ="LightBlue">
+   
+    <div>
+        <ul>
+             <li><a href="ProductView.aspx">Product View </a></li >
+             <li><a href="QuerryRegistration.aspx">Querry Registration</a></li>
+             <li><a href="ComplaintRegistration.aspx">Complaint Registration</a></li>
+             <li style="float:right"><a class="active" href="LogoutUser.aspx">Logout</a></li>
+         </ul>
+   
+    </div>
+    
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
